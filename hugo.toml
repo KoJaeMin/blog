@@ -3,4 +3,8 @@ baseURL = "https://kojaemin.github.io/"
 
 # 블로그 상단에 노출되는 이름 수정
 title = "Jaemin's blog"
+
+# 테마
 theme = 'hugo-theme-stack'
+
+languageCode = "ko-kr"
