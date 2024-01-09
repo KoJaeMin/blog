@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-git rev-list --all --count
+count=$(git rev-list --all --count)
+echo "[$(($count + 1))] $(cat .git/COMMIT_EDITMSG)" > .git/COMMIT_EDITMSG
