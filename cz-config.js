@@ -1,13 +1,3 @@
-const util = require('util');
-const child_process = require('child_process');
-
-const exec = util.promisify(child_process.exec);
-
-async function getNumberOfCommits() {
-  const { stdout } = await exec('echo $(git rev-list --all --count)');
-  return (stdout ?? "").trim();
-}
-
 module.exports = {
   types: [
     { value: '✨ Add', name: '✨  새로운 페이지 추가' },
@@ -36,7 +26,4 @@ module.exports = {
   allowBreakingChanges: ['feat', 'fix'],
   skipQuestions: ['body'],
   subjectLimit: 100,
-  Option: { 
-    typePrefix: `${(getNumberOfCommits())} `,
-  },
 };
