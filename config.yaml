@@ -194,7 +194,22 @@ menu:
           weight: -100
           params:
             icon: home
-            newTab: true
+            newTab: false
+    # archives:
+    #     - identifier: archives
+    #       name: Home
+    #       url: /
+    #       weight: -100
+    #       params:
+    #         icon: home
+    #         newTab: false
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/KoJaeMin
+          params:
+              icon: brand-github
 
 markup:
   goldmark:
