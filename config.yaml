@@ -29,6 +29,7 @@ hasCJKLanguage: false
 permalinks:
   post: /p/:slug/
   page: /:slug/
+  test: /hide/:slug/
 
 module:
     hugoVersion:
@@ -210,6 +211,7 @@ menu:
           url: https://github.com/KoJaeMin
           params:
               icon: brand-github
+
 
 markup:
   goldmark:
