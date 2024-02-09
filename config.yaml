@@ -29,7 +29,6 @@ hasCJKLanguage: false
 permalinks:
   post: /p/:slug/
   page: /:slug/
-  test: /hide/:slug/
 
 module:
     hugoVersion:
@@ -46,7 +45,7 @@ params:
     favicon:
 
     footer:
-        since: 2024
+        since:
         customText:
 
     dateFormat:
@@ -150,15 +149,13 @@ params:
             - type: search
             - type: archives
               params:
-                  limit: 5
+                limit: 5
             - type: categories
               params:
-                  limit: 10
+                limit: 10
             - type: tag-cloud
               params:
-                  limit: 10
-        page:
-            - type: toc
+                limit: 100
 
     opengraph:
         twitter:
@@ -186,55 +183,3 @@ params:
             enabled: true
         content:
             enabled: true
-
-menu:
-    main:
-        - identifier: home
-          name: Home
-          url: /
-          weight: -100
-          params:
-            icon: home
-            newTab: false
-    # archives:
-    #     - identifier: archives
-    #       name: Home
-    #       url: /
-    #       weight: -100
-    #       params:
-    #         icon: home
-    #         newTab: false
-
-    social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/KoJaeMin
-          params:
-              icon: brand-github
-
-
-markup:
-  goldmark:
-    renderer:
-      ## Set to true if you have HTML content inside Markdown
-      unsafe: false
-  tableOfContents:
-    endLevel: 4
-    ordered: true
-    startLevel: 2
-  highlight:
-    noClasses: false
-    codeFences: true
-    guessSyntax: true
-    lineNoStart: 1
-    lineNos: true
-    lineNumbersInTable: true
-    tabWidth: 4
-
-# 로봇 검색 허용
-enableRobotsTXT: true
-
-# 사이트맵 작성
-sitemap:
-changefreq: "daily"
-filename: "sitemap.xml"
