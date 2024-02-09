@@ -185,23 +185,6 @@ params:
             enabled: true
 
 menu:
-    main:
-        - identifier: home
-          name: Home
-          url: /
-          weight: -100
-          params:
-            icon: home
-            newTab: false
-    # archives:
-    #     - identifier: archives
-    #       name: Home
-    #       url: /
-    #       weight: -100
-    #       params:
-    #         icon: home
-    #         newTab: false
-
     social:
         - identifier: github
           name: GitHub
